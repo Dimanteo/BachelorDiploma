@@ -1,0 +1,10 @@
+typedef struct {
+    Elf64_Addr      r_offset;
+    Elf64_Xword     r_info;
+} Elf64_Rel;
+
+typedef struct {
+    Elf64_Addr      r_offset;
+    Elf64_Xword     r_info;
+    Elf64_Sxword    r_addend;
+} Elf64_Rela;
